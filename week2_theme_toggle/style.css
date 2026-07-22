@@ -1,0 +1,59 @@
+/* Light Mode (Default) */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.card {
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4a6cf7;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button:hover {
+    background-color: #3554d1;
+}
+
+
+/* Dark Mode */
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #f5c542;
+    color: #121212;
+}
+
+.dark-mode button:hover {
+    background-color: #e5b630;
+}
