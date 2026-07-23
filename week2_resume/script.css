@@ -1,0 +1,249 @@
+*{
+
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.5;
+    max-width:1000px;
+    margin:auto;
+    padding:2rem;
+    color:#222;
+
+}
+
+
+header{
+
+    text-align:center;
+    padding-bottom:1rem;
+
+}
+
+
+h1{
+
+    font-size:2.4rem;
+    margin-bottom:.5rem;
+
+}
+
+
+.title{
+
+    font-size:1.1rem;
+    margin-bottom:1rem;
+    font-weight:600;
+
+}
+
+
+address{
+
+    font-style:normal;
+
+}
+
+
+nav{
+
+    margin:1.5rem 0;
+
+}
+
+
+nav ul{
+
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    list-style:none;
+    flex-wrap:wrap;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+
+}
+
+
+main{
+
+    display:grid;
+    gap:2rem;
+
+}
+
+
+section{
+
+    padding-bottom:.5rem;
+
+}
+
+
+h2{
+
+    border-bottom:2px solid black;
+    margin-bottom:.75rem;
+    padding-bottom:.25rem;
+
+}
+
+
+article{
+
+    margin-bottom:1.5rem;
+
+}
+
+
+h3{
+
+    margin-bottom:.25rem;
+
+}
+
+
+.skills-list{
+
+    display:grid;
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:.5rem;
+
+    list-style-position:inside;
+
+}
+
+
+ul{
+
+    padding-left:1rem;
+
+}
+
+
+li{
+
+    margin-bottom:.35rem;
+
+}
+
+
+aside{
+
+    background:#f5f5f5;
+    padding:1rem;
+    border-radius:6px;
+
+}
+
+
+footer{
+
+    text-align:center;
+    margin-top:2rem;
+    padding-top:1rem;
+    border-top:1px solid #cccccc;
+
+}
+
+
+a{
+
+    color:#222;
+
+}
+
+
+a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+@media (max-width:768px){
+
+
+    body{
+
+        padding:1rem;
+
+    }
+
+
+    .skills-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    nav ul{
+
+        flex-direction:column;
+        align-items:center;
+        gap:.75rem;
+
+    }
+
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+
+}
+
+
+@media print{
+
+
+    body{
+
+        padding:0;
+        font-size:.9rem;
+
+    }
+
+
+    nav{
+
+        display:none;
+
+    }
+
+
+    article{
+
+        margin-bottom:.75rem;
+
+    }
+
+
+    .skills-list{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+}
