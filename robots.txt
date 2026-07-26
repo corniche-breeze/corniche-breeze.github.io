@@ -1,3 +1,5 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+# add master file later, will be used by netlify because root is NSCPROJECTS
+
