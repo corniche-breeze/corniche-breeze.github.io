@@ -1,6 +1,6 @@
 # My Web Development Projects Portfolio
 
-Welcome to my frontend development portfolio repository! This project contains a collection of standalone web pages and coding assignments built while learning HTML, CSS and JavaScript
+Welcome to my frontend development portfolio repository!!! This project contains a collection of standalone web pages and coding assignments built while learning HTML, CSS and JavaScript
 
 ## 🚀 Live Demo
 You can view the live deployment of my latest project here:
