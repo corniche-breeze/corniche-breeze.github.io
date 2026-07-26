@@ -1,2 +1,4 @@
+# Allow all crawlers in week2_resume folder
 User-agent: *
-Disallow: /
+Allow: /
+
