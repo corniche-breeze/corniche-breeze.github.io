@@ -26,7 +26,22 @@
     </div>
 
     <script>
-        // YOUR JS CODE WILL GO HERE
+        function generateCustomGreeting(name, time = "day") {
+return `Good ${time}, ${name}! Welcome back to JavaScript class.`;
+}
+
+        document.getElementById('greetBtn').addEventListener('click', function() {
+            const name = document.getElementById('userName').value.trim();
+            const timeOfDay = document.getElementById('timeOfDay').value.trim();
+            const output = document.getElementById('output');
+
+            if (name && timeOfDay) {
+                output.textContent = `Good ${timeOfDay}, ${name}!`;
+            } else {
+                output.textContent = 'Please enter both your name and the time of day.';
+            }
+        });
+
     </script>
 </body>
 </html>
