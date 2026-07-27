@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Week 3 Assignment: Dynamic Greeting</title>
@@ -52,11 +53,7 @@
         <input type="text" id="userName" placeholder="e.g., Alex">
 
         <label for="timeOfDay">Time of day:</label>
-        <input
-            type="text"
-            id="timeOfDay"
-            placeholder="e.g., morning, afternoon, evening"
-        >
+        <input type="text" id="timeOfDay" placeholder="e.g., morning, afternoon, evening">
 
         <button id="greetBtn">Generate Greeting</button>
 
@@ -68,22 +65,22 @@
             if (!name && !time) {
                 return "Please provide a name and a time of day.";
             } else if (!name) {
-return "Please provide a name.";
+                return "Please provide a name.";
             } else
-            if (!time) {
-                return "Please provide a time of day.";
-            }
+                if (!time) {
+                    return "Please provide a time of day.";
+                }
 
             return `Good ${time}, ${name}! Welcome back to JavaScript class.`;
         }
 
-        document.getElementById("greetBtn").addEventListener("click", function() {
+        document.getElementById("greetBtn").addEventListener("click", function () {
             const name = document.getElementById("userName").value.trim();
             const timeOfDay = document.getElementById("timeOfDay").value.trim();
             const output = document.getElementById("output");
 
             // Clear previous output
-            output.textContent = "";
+            //output.textContent = "";
 
             // Generate and display the new greeting
             output.textContent = generateCustomGreeting(name, timeOfDay);
@@ -91,4 +88,5 @@ return "Please provide a name.";
     </script>
 
 </body>
+
 </html>
