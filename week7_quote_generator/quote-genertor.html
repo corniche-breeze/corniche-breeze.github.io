@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 7 Assignment: Live Quote Generator</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 0; background: #eef2f3; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 450px; text-align: center; box-sizing: border-box; }
+        
+        .quote-box { min-height: 120px; display: flex; flex-direction: column; justify-content: center; margin-bottom: 1.5rem; position: relative; }
+        .quote-text { font-size: 1.25rem; font-style: italic; color: #2c3e50; line-height: 1.5; margin: 0 0 0.75rem 0; }
+        .quote-author { font-size: 0.95rem; font-weight: bold; color: #7f8c8d; text-transform: uppercase; letter-spacing: 1px; }
+        
+        button { background: #3498db; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: bold; transition: background 0.2s; width: 100%; }
+        button:hover { background: #2980b9; }
+        button:disabled { background: #bdc3c7; cursor: not-allowed; }
+        
+        .status-message { font-size: 0.85rem; margin-top: 1rem; color: #95a5a6; min-height: 18px; }
+        .error-text { color: #e74c3c; font-weight: 500; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="quote-box">
+            <!-- Dynamic API text elements inject here -->
+            <p id="quoteText" class="quote-text">"Click the button below to fetch a spark of inspiration."</p>
+            <p id="quoteAuthor" class="quote-author"></p>
+        </div>
+        
+        <button id="fetchBtn">Get New Quote</button>
+        <div id="statusMessage" class="status-message"></div>
+    </div>
+
+    <script>
+        // Target API URL: A free, public random quote engine
+        const API_URL = "https://api.allorigins.win/raw?url=https://zenquotes.io/api/random";
+
+        // DOM Elements
+        const quoteText = document.getElementById("quoteText");
+        const quoteAuthor = document.getElementById("quoteAuthor");
+        const fetchBtn = document.getElementById("fetchBtn");
+        const statusMessage = document.getElementById("statusMessage");
+
+        // YOUR CODE WILL GO HERE
+    </script>
+</body>
+</html>
