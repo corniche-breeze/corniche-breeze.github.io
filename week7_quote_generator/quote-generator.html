@@ -43,6 +43,46 @@
         const statusMessage = document.getElementById("statusMessage");
 
         // YOUR CODE WILL GO HERE
+        // Fetch a random quote from the API
+async function fetchRandomQuote(url) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        return data[0];
+    } catch (error) {
+         console.error("Fetch error:", error);
+        return null;
+    }
+}
+
+// Handle button click
+fetchBtn.addEventListener("click", async function () {
+
+    // Activate loading UI state
+    fetchBtn.disabled = true;
+    fetchBtn.textContent = "Fetching...";
+    statusMessage.textContent = "";
+    statusMessage.classList.remove("error-text");
+
+    // Execute asynchronous request
+    const data = await fetchRandomQuote(API_URL);
+
+    // Inspect and render content
+    if (data === null) {
+        statusMessage.textContent =
+            "Failed to load quote. Check your internet connection.";
+        statusMessage.classList.add("error-text");
+    } else {
+        quoteText.textContent = data.q;
+        quoteAuthor.textContent = data.a;
+    }
+
+    // Restore UI state
+    fetchBtn.disabled = false;
+    fetchBtn.textContent = "Get New Quote";
+});
+
     </script>
 </body>
 </html>
